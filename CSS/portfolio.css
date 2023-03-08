@@ -1,0 +1,136 @@
+.navbar{
+    background-color:#eee;
+}
+.navbar .nav-link{
+    color:black;
+}
+.navbar-brand{
+    color:#A87496;
+}
+.navbar .btn{
+background-color:#A87496 ;
+/* color:#A87496 ; */
+}
+
+.navbar .nav-link:hover,.navbar .nav-link:focus{
+    color: #A87496;
+    /* don't add space btween element and pseudo classes*/
+}
+img{
+   float:right;
+}
+h1{
+    position: relative;
+    color:#A87496;
+    font-style: italic;
+    margin-bottom:5px;
+    text-align: center;
+}
+.main-title::after{
+    content: "";
+    width:120px;
+    height: 2px;
+    background-color: var(--gren-color);
+    bottom:-20px ;
+    left:50%;
+    position: absolute;
+    transform: translateX(-50%);}
+    .skills{
+        position: relative;
+        text-align: center;
+        margin-bottom: 4px;
+
+    }
+   .skills::after{
+        content="";
+        width: min-content;
+        height: 2px;
+        background-color: aqua;
+      
+      
+      
+        position: absolute;
+
+
+    }
+    
+    .mail .btn{
+       width:200px;
+        height: min-content;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin:auto;
+       
+    }
+    .card{
+        margin-top: 4px;
+        height:400px;
+    
+
+    }
+    .card-header{
+        color:#A87496;
+    }
+    .softskills{
+        border-radius: 50%;
+        display: flex;
+    }
+    .soft{
+        width:150px;
+        height: 150px;
+        background-color: #eee;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+        border-radius: 50%;
+        box-shadow: -5px -5px 0 0 #e91e63, 5px 5px 0 0 #2196f3;
+      
+        margin: 10px;
+    }
+    /* .one div::before{ */
+        /* content: counter(number); */
+        /* background-color: black; */
+        /* color: white; */
+        /* padding: 5px 10px; */
+        /* border-radius: 50%; */
+        /* position: absolute; */
+        /* left: 33px; */
+        /* top: -11px; */
+    /* } */
+    /* .one div::after{ */
+        /* content: attr(data-person); */
+        /* font-weight: bold; */
+        /* position: absolute; */
+        /* left: 20px; */
+        /* top: 38px; */
+    /* } */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+ 
