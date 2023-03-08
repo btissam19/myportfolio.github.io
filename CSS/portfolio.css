@@ -16,15 +16,16 @@ background-color:#A87496 ;
     color: #A87496;
     /* don't add space btween element and pseudo classes*/
 }
-img{
-   float:right;
-}
+
+
+
 h1{
     position: relative;
     color:#A87496;
     font-style: italic;
     margin-bottom:5px;
     text-align: center;
+    text-decoration: underline;
 }
 .main-title::after{
     content: "";
@@ -108,7 +109,23 @@ h1{
         /* left: 20px; */
         /* top: 38px; */
     /* } */
-    
+    .coreskills img{
+        width: 100px;
+    }
+    .coreskills li img  {
+        display:flex;
+        justify-content:space-evenly;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .coreskills li img .first{
+        margin-left: 3px;
+    }
+    .coreskills li img .last{
+        margin-right: 3px;
+    }  
+  
+  
     
     
     
