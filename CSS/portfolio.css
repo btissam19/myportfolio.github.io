@@ -1,97 +1,215 @@
+:root{
+    --backcolor:#eee3e7;
+    --buttoncolor:#f6abb6;
+    --textcolor:black;
+    --textcolorbac:#f4b6c2;
+}
+/*-------------------------------styling navbar---------------------------------*/
 .navbar{
-    background-color:#eee;
+    background-color:var(--backcolor);
 }
 .navbar .nav-link{
-    color:black;
+    color:var(--textcolor);
 }
 .navbar-brand{
-    color:#A87496;
+    color:var(--textcolor);
 }
 .navbar .btn{
-background-color:#A87496 ;
-/* color:#A87496 ; */
+background-color:var(--buttoncolor);
 }
 
 .navbar .nav-link:hover,.navbar .nav-link:focus{
-    color: #A87496;
+    color:  #f6abb6;
     /* don't add space btween element and pseudo classes*/
 }
-
-
-
-h1{
-    position: relative;
-    color:#A87496;
-    font-style: italic;
-    margin-bottom:5px;
-    text-align: center;
-    text-decoration: underline;
+.navbar-brand img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
-.main-title::after{
+.navbar-toggler span{
+    background-color: var(--buttoncolor);
+}
+.navbar-toggler span:hover{
+    color: var(--buttoncolor);
+}
+/*there is litle problem here*/
+.navbar-toggler span:focus{
+    box-shadow: none;
+    border: white;
+}
+/*-------------------------------styling landing---------------------------------*/
+.landing{
+    /* there is a problem in width and height*/
+}
+.landing .card{
+    background-color: var(--backcolor);
+}
+.landing .card .card-body h3{
+    text-align: center;
+    font-weight:bold;
+    margin-top: 6px;
+    margin-bottom: 55px;
+    position: relative;   
+}
+.landing .card .card-body h3::after{
     content: "";
-    width:120px;
-    height: 2px;
-    background-color: var(--gren-color);
-    bottom:-20px ;
-    left:50%;
     position: absolute;
-    transform: translateX(-50%);}
-    .skills{
-        position: relative;
-        text-align: center;
-        margin-bottom: 4px;
-
-    }
-   .skills::after{
-        content="";
-        width: min-content;
-        height: 2px;
-        background-color: aqua;
-      
-      
-      
+    width: 150px;
+    height: 4px;
+    bottom: -15px;
+    left: 50%;
+    background-color:  var(--buttoncolor);
+    transform: translateX(-50%);
+}
+.landing .card .card-body p{
+    font-size: large;
+    font-weight:;
+    padding-top:5px ;
+    padding-bottom:5px ;
+    text-align: justify;
+}
+/*-------------------------------hardskills---------------------------------*/
+.hardskills .card{
+    margin-top: 4px;
+    height:400px;
+    
+}
+.hardskills h3{
+    text-align: center;
+    font-weight:bold;
+    margin-top: 6px;
+    margin-bottom: 55px;
+    position: relative;   
+}
+.hardskills h3::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    bottom: -15px;
+    left: 50%;
+    background-color:  var(--buttoncolor);
+    transform: translateX(-50%);
+}
+/*-------------------------------softskills---------------------------------*/
+.softskills h3{
+           text-align: center;
+           font-weight:bold;
+           margin-top: 6px;
+           margin-bottom: 55px;
+            position: relative;   
+}
+.softskills h3::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    bottom: -15px;
+    left: 50%;
+    background-color:  var(--buttoncolor);
+    transform: translateX(-50%);
+}
+.softskills{
+    border-radius: 50%;
+    display: flex;
+}
+.soft{
+    width:150px;
+    height: 150px;
+    background-color: #eee;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    border-radius: 50%;
+    box-shadow: -5px -5px 0 0  #eec9d2, 5px 5px 0 0 #f4b6c2;
+    margin: 10px;
+}
+/*-------------------------------coreskills---------------------------------*/
+.coreskills h3{
+    text-align: center;
+font-weight:bold;
+margin-top: 6px;
+margin-bottom: 55px;
+position: relative;   
+}
+.coreskills h3::after{
+    content: "";
+    position: absolute;
+     width: 250px;
+height: 4px;
+bottom: -15px;
+left: 50%;
+background-color:  var(--buttoncolor);
+transform: translateX(-50%);
+}
+/*-------------------------------my project ---------------------------------*/
+.myproject h3{
+    text-align: center;
+    font-weight:bold;
+    margin-top: 6px;
+    margin-bottom: 55px;
+     position: relative;  } 
+.myproject h3::after{
+        content: "";
         position: absolute;
-
-
+        width:  120px;
+        height: 4px;
+        bottom: -15px;
+        left: 50%;
+        background-color:  var(--buttoncolor);
+        transform: translateX(-50%);
     }
+    .myproject .btn{
+        background-color: var(--buttoncolor);
+    }
+/*-------------------------------yourproject ---------------------------------*/
+.yourproject h3{
+    text-align: center;
+    font-weight:bold;
+    margin-top: 6px;
+    margin-bottom: 55px;
+     position: relative;  } 
+ .yourproject h3::after{
+    content: "";
+    position: absolute;
+    width:  250px;
+    height: 4px;
+    bottom: -15px;
+    left: 50%;
+    background-color:  var(--buttoncolor);
+    transform: translateX(-50%);
+     }
+     .yourproject .btn{
+        background-color: var(--buttoncolor);
+    }
+    /*-------------------------------footer--------------------------------*/
+    .footer .btn{
+        background-color: var(--buttoncolor);
+    }
+    .footer img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;}
     
-    .mail .btn{
-       width:200px;
-        height: min-content;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin:auto;
-       
-    }
-    .card{
-        margin-top: 4px;
-        height:400px;
     
-
-    }
-    .card-header{
-        color:#A87496;
-    }
-    .softskills{
-        border-radius: 50%;
-        display: flex;
-    }
-    .soft{
-        width:150px;
-        height: 150px;
-        background-color: #eee;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 20px;
-        border-radius: 50%;
-        box-shadow: -5px -5px 0 0 #e91e63, 5px 5px 0 0 #2196f3;
-      
-        margin: 10px;
-    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /* .one div::before{ */
         /* content: counter(number); */
         /* background-color: black; */
