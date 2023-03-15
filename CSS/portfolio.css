@@ -92,6 +92,27 @@ background-color:var(--buttoncolor);
     background-color:  var(--buttoncolor);
     transform: translateX(-50%);
 }
+.hardskills .row .card .uml{
+    height: 230px;
+}
+.hardskills .row .card .clan{
+    height:230px;
+}
+.hardskills .row .card-body h6{
+    color:#D291BC;
+    text-align: center;
+    text-shadow: #D291BC;
+    text-decoration: underline;
+}
+.hardskills .row .card-body ul{
+    list-style: square inside url("sqpurple.gif");
+    
+   
+}
+.hardskills .row .card-body ul li::marker {
+    color: #D291BC; 
+/* for change only the color of the marker;*/}
+
 /*-------------------------------softskills---------------------------------*/
 .softskills h3{
            text-align: center;
@@ -145,6 +166,10 @@ left: 50%;
 background-color:  var(--buttoncolor);
 transform: translateX(-50%);
 }
+.coreskills ul li img{
+    width: 87px;
+    height: 87px;
+}
 /*-------------------------------my project ---------------------------------*/
 .myproject h3{
     text-align: center;
@@ -165,6 +190,23 @@ transform: translateX(-50%);
     .myproject .btn{
         background-color: var(--buttoncolor);
     }
+.myproject ul li{
+    font-size: large;
+    font-weight: 400;
+    margin-left: 10%;
+}
+.myproject ul{
+    list-style: square inside url("sqpurple.gif");
+    border-radius: 5% solid var(--backcolor);
+
+}
+.myproject ul li::marker{
+    color: #D291BC;
+}
+.myproject ul li a{
+    color:#D291BC;
+    padding: 5px;
+}
 /*-------------------------------yourproject ---------------------------------*/
 .yourproject h3{
     text-align: center;
@@ -186,6 +228,9 @@ transform: translateX(-50%);
         background-color: var(--buttoncolor);
     }
     /*-------------------------------footer--------------------------------*/
+    .footer{
+        background-color:var(--backcolor) ;
+    }
     .footer .btn{
         background-color: var(--buttoncolor);
     }

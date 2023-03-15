@@ -1,0 +1,56 @@
+*{
+ 
+    box-sizing: border-box;
+    margin:0;
+    padding:0.
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border-radius: 12px;
+    
+  }
+    .login{
+        height:min-content;
+        width: 500px;
+        background-color:#eee3e7;
+       border-radius:12px;
+  }
+  .login .main-btn{
+    background-color: #f6abb6;
+}
+.login h3{
+    text-align: center;
+font-weight:bold;
+margin-top: 6px;
+margin-bottom:6px;
+position: relative;  
+}
+.login h3::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    bottom: -2px;
+    left: 50%;
+    background-color:  var(--buttoncolor);
+    transform: translateX(-50%);
+    /* WHY THIS DON't work*/
+}
+  .form{
+    /* width: 300px; */
+    margin-left: 50px;
+    margin-right: 50px;
+  
+}
+ .login input:hover{
+    outline: none;
+    color: aqua;
+}
+  .form-label{
+    font-weight: bold;
+    text-decoration: underline ;}
+    .submit{
+    margin-top: 10px;}
