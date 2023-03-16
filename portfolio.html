@@ -24,15 +24,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link active" aria-current="page" href="#hero">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#hero">About</a>
+                <a class="nav-link" href="#hardskills">hardskills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#softskills">softskills</a>
               </li>
-              <a href="contactme.html" class="btn rounded main-btn" >Contact me</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#coreskills">Coreskills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#myproject">Myproject</a>
+              </li>
+              <a href="https://www.linkedin.com/in/ibtissam-ech-chaibi-57bb9b246/" class="btn rounded main-btn" >Know more</a>
             </ul> 
           </div>
         </div>
@@ -58,8 +64,11 @@
    <section id="hardskills" class="hardskills mt-3">
     <div class="container">
       <h3 >I am good at</h3>
-      <div class="row d-flex align-items-center justify-content-center">
-        <div class="col-md-6 col-lg-3">
+      <div class="row ">
+        <!--row d-flex align-items-center justify-content-center cause problem of not show the content of the card in small scren-->
+        <div class="col-md-6 col-lg-3 col-sm-6 col-10">
+          <!--col-12 you can add the col-12 class to the div element that contains the card class. 
+            This will ensure that the card takes up the full width of the screen on small and medium-->
           <div class="card">
             <img src="images/html-css.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -72,7 +81,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 ">
+        <div class="col-md-6 col-lg-3 col-sm-6 col-10">
           <div class="card">
             <img src="images/laravel.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -86,7 +95,7 @@
             </div>
           </div> 
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3 col-sm-6 col-10">
           <div class="card">
             <img src="images/uml2.png" class="card-img-top uml" alt="...">
             <div class="card-body">
@@ -98,7 +107,7 @@
             </div>
           </div> 
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3 col-sm-6 col-10">
           <div class="card ">
           <img src="images/langue.jpg" class="card-img-top clan" alt="...">
             <div class="card-body">
@@ -116,26 +125,28 @@
       </div>
     </div>
     <section>
+      
   <!--------------------------------------------softskills section-------------------------------------------->
     <section id="softskills" class="softskills">
-      <div class="container ">
-        <h3 >My softskills are </h3>
-      <div class="row">
-        <div class="col-lg-2"> <div class="soft" >collaboration</div></div>
-        <div class="col-lg-2"> <div class="soft" >problem-solving</div></div>
-        <div class="col-lg-2"><div  class="soft">Adabtability</div></div>
-        <div class="col-lg-2"> <div  class="soft">time-managment</div></div>
-        <div class="col-lg-2"><div class="soft">Continuous learning</div></div>
-        <div class="col-lg-2"> <div class="soft">Attention to details</div></div>
-      </div>
+      <div class="container">
+        <h3>My softskills are</h3>
+        <div class="row">
+          <div class=" col-sm-4 col-md-2 "><div class="soft">Collaboration</div></div>
+          <div class="col-sm-4 col-md-2  "><div class="soft">Problem-solving</div></div>
+          <div class="col-sm-4 col-md-2  "><div class="soft">Adaptability</div></div>
+          <div class="col-sm-4 col-md-2 c "><div class="soft">Time management</div></div>
+          <div class="col-sm-4 col-md-2  "><div class="soft">Continuous learning</div></div>
+          <div class="col-sm-4 col-md-2 "><div class="soft">Attention to details</div></div>
+        </div>
       </div>
     </section>
+    
      <!-------------------------------------------------core skills--------------------------------------->
      <section id="coreskills" class="coreskills">
       <div class="container">
         <h3 >I have a basic knowledge about </h3>
 
-        <ul class="list-unstyled d-flex  mt-5 mb-5 ms-5 me-5 p-5 coreskills ">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center align-items-center mt-5 mb-5 p-5 coreskills">
           <li class="rounded-pill coreskills">
             <img src="images/git.png" class="img-fluid">
           </li>
@@ -185,7 +196,7 @@
        <div class="project text-center pb-5 ">
         <div class="text-center">
           <h3 class=" ">Start Your Project with me now</h3>
-          <a href="contactme.html" class="btn rounded-pill main-btn ">START PROJECT</a>
+          <a href="https://www.linkedin.com/in/ibtissam-ech-chaibi-57bb9b246/" class="btn rounded-pill main-btn ">START PROJECT</a>
       </div>
     </section>
      <!-------------------------------------------------FOOTER--------------------------------------->
@@ -210,12 +221,16 @@
               <div class=" ">
               <h5>Links</h5>
               <ul class="list-unstyled lh-lg">
-                <li class=>Home</li>
-                <li class=>About</li>
-                <li class=>services</li>
-                <li class=>skills</li>
-                <li class=>Support</li>
-                <li class=>Terms and Condition</li>
+               <li><a href="#hardskills">hardskills</a></li>
+              <li>
+                <a href="#softskills" class="uns">softskills</a>
+              </li>
+              <li>
+                <a href="#coreskills">Coreskills</a>
+              </li>
+              <li>
+                <a href="#myproject">Myproject</a>
+              </li>
               </ul>
               </div>
              </div> 
@@ -225,9 +240,9 @@
                <div class=" ">
                <h5>About me</h5>
                <ul class="list-unstyled lh-lg ">
-                 <li class=>contact me</li>
-                 <li class=>support me</li>
-                 <li class=>work with me</li>
+                 <li class=><a href="https://www.linkedin.com/in/ibtissam-ech-chaibi-57bb9b246/" >contact me</a></li>
+                 <li class=> <a href="https://github.com/btissam19" >support me</a></li>
+                 <li class=><a href="#yourproject" >work with me</a></li>
                </ul>
                </div>
               </div> 
@@ -260,31 +275,7 @@
         </div>
       </div>
     </section>
-  <section class="last"></section>
-      
-      
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-    
-  
-    
-    
-
-    
-    
-           
-    
-     <!-------------------------------------------------hard skills------------------------------>
-     
+     <!-------------------------------------------------hard skills------------------------------>   
     <script src="JS/bootstrap.bundle.min.js"></script>   
 </body>
 </html>
